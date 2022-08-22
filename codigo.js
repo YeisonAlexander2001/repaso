@@ -12,3 +12,13 @@ alert ("hola" + nombre);
 *=
 /=
 50 %= 2
+
+resultado = numero 1 / numero2; 
+frase1 = "yeison suarez"
+
+frase = " y estoy programando"
+
+document.write()
+
+${}
+
