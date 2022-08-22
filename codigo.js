@@ -93,7 +93,7 @@ for(animal of animales){
 }
 */
 // LABEL PERMITE ASOCIAR UN BUCLE A UN NOMBRE; ES UNA SENTENCIA
-
+/** 
 array1 = ["maria", "josefa", "roberta"];
 array2 = ["pedro", "marcelo", array1, "josefina"];
 
@@ -111,4 +111,28 @@ for(let array in array 2){
                     else {
             document.write(array2[array] + "<br>");
         }
+}*/
+/** 
+function saludar(nombre){
+    let mellamo = ` Hola  ${nombre} que tal`;
+    document.write(mellamo)
 }
+saludar("yeison")
+*/
+//funciones flecha
+
+let free = false;
+
+const ingresar = (time) =>{
+    let edad= prompt("cual es tu edad?");
+    if(edad>18){
+        if (time<7 && time>=2 && free == false){
+        alert("puedes ingresar");
+        free==true;
+        } else {alert("puedes pasar pero tienes que pagar la entrada");
+        }}
+        else {alert("eres menor de edad no puedes pasar");} 
+
+}
+
+ingresar(23)
