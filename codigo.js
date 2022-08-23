@@ -136,3 +136,80 @@ const ingresar = (time) =>{
 }
 
 ingresar(23)
+
+
+//Cadenas y metodos; ejercicios con cadenas a partir de metodos que permiten manipular y jugar con los caracteres
+//y el contenido de las variables
+
+let cadena = "cadena de prueba";
+let cadenas= 12345;
+let resultadonuevo = cadenas.toString();
+
+resultado = cadena.concat("hola");
+resultado2 = cadena.startsWith("hola");
+resultado3 = cadena.endsWith("prueba");
+resultado4 = cadena.includes("prueba");
+resultado5 = cadena.indexOf("prueba");
+resultado6 = cadena.padStart(8,"O");
+resultado7 = cadena.split("como");
+resultado8 = cadena.toLowerCase();
+
+
+document.write(resultado + "<br>");
+document.write(resultado2);
+document.write(resultado3);
+document.write(resultado4);
+document.write(resultado5);
+document.write(resultado6);
+document.write(resultado7[0]);
+document.write(resultado8);
+document.write(resultadonuevo);
+
+
+//METODOS DE ARRAYS
+
+let equipos = ["Barcelona", "Real madrid", "Juventus", "Liverpool"];
+
+let resultadopop = equipos.pop()
+let resultadoshift = equipos.shift();
+let agregar = equipos.push("Bayern", "Milan");
+let agregarprincipio = equipos.unshift("Manchester", "Chelsea");
+let agregarenordendeseado = equipos.splice(1,0,"PSG", "Dormunt");
+
+document.write(resultadopop);
+document.write(resultadoshift);
+document.write(equipos.length);
+
+//METODOS ACCESORES
+
+let metodojoin = equipos.join();
+
+let frutas =["banano", "naranja", "durazno", "piña"];
+
+resultadofrutas = frutas.filter(fruta => fruta.length > 4)
+document.write(resultadofrutas);
+
+
+//OBJETO MATH
+
+numeroMATH = Math.sqrt(45);
+document.write(numeroMATH);
+numeroMATH2 = Math.cbrt(45);
+document.write(numeroMATH2);
+
+// Math.max devuelve el numero mas grande
+// Math.min
+numeroMax = Math.max(4,35,67,89,24);
+numeroMin = Math.min(4,35,67,89,24);
+
+// Math.ramdom
+// genera un numero aleatorio
+
+let numeri = Math.random()*100;
+numeri = Math.round(numeri);
+document.write(numeri);
+
+//Math.floor redondea para abajo
+//Math.trunc elimina los decimales
+let numerito = Math.trunc(9.9);
+document.write(numerito);
